@@ -6,6 +6,7 @@ from ollama import Ollama as llm
 
 def query(question):
     # Initialize the language model
+    gh repo clone ollama/ollama-python
     llm3 = llm(model="llama3.2:3b", request_timeout=120.0)
     
     # Make a completion request with the question as the prompt
