@@ -6,7 +6,7 @@ from ollama import Ollama as llm
 
 def query(question):
     # Initialize the language model
-    llm3 = llm(model="llama3.2:3b", base_url="https://github.com/ollama/ollama-python.git")
+    llm3 = llm(model="llama-2-7b", base_url="https://github.com/ollama/ollama-python.git")
     
     # Make a completion request with the question as the prompt
     response = llm3.complete(prompt=question)
