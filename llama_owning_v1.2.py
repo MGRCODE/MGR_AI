@@ -2,7 +2,7 @@ import requests
 import json
 import streamlit as st
 import pandas as pd
-from llama_index.llms.ollama import Ollama as llm
+from ollama import Ollama as llm
 
 def query(question):
     # Initialize the language model
